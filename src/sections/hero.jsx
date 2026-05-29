@@ -64,7 +64,7 @@ export default function Hero() {
             duration-300
           `}
         >
-          Nizuc Resort
+          Save my place
         </a>
 
         <p
