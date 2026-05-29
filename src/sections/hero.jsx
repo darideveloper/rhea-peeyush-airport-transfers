@@ -38,16 +38,16 @@ export default function Hero() {
             font-normal
           `}
         >
-          Tony &
+          Rhea &
           <br />
-          Thoa's
+          Peeyush's
           <br />
           Wedding
         </h1>
         <p>November 8 - 12, 2025</p>
 
         <a
-          href='https://withjoy.com/tony-and-thoa/welcome'
+          href='https://withjoy.com/rhea-and-peeyush/welcome'
           target='_blank'
           className={`
             bg-gold hover:bg-white
