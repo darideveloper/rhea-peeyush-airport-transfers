@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        "black": "#333333",
-        "white": "#f6f4f0",
-        "gold": "#d0a95d",
-        "green": "#86896B",
-        "purple": "#94aad2",
+        "black": "var(--black)",
+        "white": "var(--white)",
+        "gold": "var(--gold)",
+        "grey": "var(--grey)",
+        "blue": "var(--blue)",
       }
     },
   },

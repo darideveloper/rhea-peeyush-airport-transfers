@@ -7,7 +7,7 @@ export default function Hero() {
         flex-col-reverse md:flex-row
         items-center
         justify-center
-        text-purple
+        text-black
         font-bold
         container
       `}
@@ -47,11 +47,10 @@ export default function Hero() {
         <p>November 8 - 12, 2025</p>
 
         <a
-          href='https://withjoy.com/rhea-and-peeyush/welcome'
-          target='_blank'
+          href='#buy'
           className={`
-            bg-gold hover:bg-white
-            text-white hover:text-gold
+            bg-blue hover:bg-white
+            text-white hover:text-blue
             font-bold
             px-12
             py-2
@@ -61,7 +60,7 @@ export default function Hero() {
             md:mb-12
             inline-block
             border-4
-            border-gold
+            border-blue
             duration-300
           `}
         >

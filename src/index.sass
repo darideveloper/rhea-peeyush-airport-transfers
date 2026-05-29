@@ -1,7 +1,15 @@
-$blue: #86896B
-$black: #1a1a1a
-$white: #ffffff
-$gold: #C8B568
+:root
+  --black: #333333
+  --white: #ffffff
+  --gold: #d0a95d
+  --grey: #cad2d8
+  --blue: #94aad2
+
+$black: var(--black)
+$white: var(--white)
+$gold: var(--gold)
+$grey: var(--grey)
+$blue: var(--blue)
 
 html
   scroll-behavior: smooth
@@ -18,7 +26,7 @@ h1, h2, h3, h4, h5, h6, .title, [class~="text"]
 p, h1, h2, h3, h4, h5, h6
   margin: 0
   padding: 0
-  color: var($black)
+  color: $black
 
 .container
   margin: 0 auto
