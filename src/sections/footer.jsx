@@ -67,7 +67,7 @@ export default function Footer() {
       </section>
 
       <small className="text-white text-xsm text-center w-full block pt-10 pb-5">
-        2023 - All Rights Reserved Cancun Concierge &nbsp; | &nbsp; Powered by <a href="https://api.whatsapp.com/send?phone=5214493402622" target="_blank" className="hover:opacity-70 duration-300">Dari Developer</a>
+        {new Date().getFullYear()} - All Rights Reserved Cancun Concierge &nbsp; | &nbsp; Powered by <a href="https://api.whatsapp.com/send?phone=5214493402622" target="_blank" className="hover:opacity-70 duration-300">Dari Developer</a>
       </small>
     </footer>
   )
