@@ -173,11 +173,11 @@ export default function Form() {
         setArrivalFreeDates(freeDates.arrival)
         setDepartureFreeDates(freeDates.departure)
   
-        // Update dates
-        setArrivingDate(freeDates.arrival[0])
-        setDepartingDate(freeDates.departure[0])
+        // Update dates to default Dec 17, 2026
+        setArrivingDate("2026-12-17")
+        setDepartingDate("2026-12-17")
   
-        const e = {target: {value: null}}
+        const e = {target: {value: "2026-12-17"}}
         handleUpdateDate(e, "Arriving", true, apiTransports)
         handleUpdateDate(e, "Departing", true, apiTransports)
       })
@@ -283,6 +283,8 @@ export default function Form() {
             name={`${title.toLowerCase()}-date`}
             handleUpdate={(e) => handleUpdateDate(e, title)}
             value={title == "Arriving" ? arrivingDate : departingDate}
+            min="2026-12-01"
+            max="2026-12-31"
           />
           <Input
             label={`${title} time ${direction} Cancun`}
