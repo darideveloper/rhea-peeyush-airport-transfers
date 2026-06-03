@@ -334,6 +334,12 @@ export default function Form() {
         text='Transportation Options'
       />
 
+      <div className="w-5/6 mx-auto mb-10 -mt-10 text-center">
+        <FormText
+          text="*Complimentary transportation only applies to main arrivals on December 17th and main departures on December 20th."
+        />
+      </div>
+
       <form action="." method="post" className="mx-auto" onSubmit={e => { handleSubmit(e) }}>
         <TransportTypes
           handleUpdateType={handleUpdateType}

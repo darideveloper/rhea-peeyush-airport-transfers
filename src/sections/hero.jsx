@@ -74,7 +74,7 @@ export default function Hero() {
             mx-auto
           `}
         >
-          Complimentary transportation will be provided for all guests traveling on December 17th, on December 18th, on December 19th, and on December 20th.
+          Complimentary transportation will be provided for main arrivals on December 17th and main departures on December 20th.
         </p>
 
         <p
