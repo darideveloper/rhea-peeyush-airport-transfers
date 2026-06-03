@@ -421,7 +421,11 @@ export default function Form() {
 
         </div>
 
-        <VipCode />
+          {/* 
+            VIP Code feature is currently hidden to simplify UX. 
+            Un-comment the line below to re-enable it.
+          */}
+          {/* <VipCode /> */}
 
         <p className={`total text-center text-2xl w-fulll block mt-10 ${total == 0 ? "hidden" : ""}`}>
           Total

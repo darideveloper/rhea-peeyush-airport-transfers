@@ -35,3 +35,4 @@ docs/
 
 # ignore by default all hiden folders (like agents folders)
 .*/
+.env.production
