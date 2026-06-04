@@ -448,7 +448,7 @@ export default function Form() {
             flex items-center justify-center mt-10
           `}>
           <SubmitBtn
-            value={total == 0 ? "Save my place" : "Buy Now"}
+            value={total == 0 ? "Reserve Now" : "Buy Now"}
             extraClass={`w-48 py-3`}
           />
         </div>
