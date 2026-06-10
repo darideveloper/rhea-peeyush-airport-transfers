@@ -37,11 +37,11 @@ export default function Form() {
   const [hotel, setHotel] = useState()
   const [otherHotel, setOtherHotel] = useState('')
   const [hotels, setHotels] = useState([])
-  const [arrivingDate, setArrivingDate] = useState('')
+  const [arrivingDate, setArrivingDate] = useState('2026-12-17')
   const [arrivingTime, setArrivingTime] = useState('')
   const [arrivingAirline, setArrivingAirline] = useState('')
   const [arrivingFlight, setArrivingFlight] = useState('')
-  const [departingDate, setDepartingDate] = useState('')
+  const [departingDate, setDepartingDate] = useState('2026-12-20')
   const [departingTime, setDepartingTime] = useState('')
   const [departingAirline, setDepartingAirline] = useState('')
   const [departingFlight, setDepartingFlight] = useState('')
@@ -173,14 +173,19 @@ export default function Form() {
         setArrivalFreeDates(freeDates.arrival)
         setDepartureFreeDates(freeDates.departure)
   
-        // Update dates to default Dec 17, 2026
+        // Update dates to default Dec 17, 2026 and Dec 20, 2026
         setArrivingDate("2026-12-17")
-        setDepartingDate("2026-12-17")
+        setDepartingDate("2026-12-20")
   
-        const e = {target: {value: "2026-12-17"}}
-        handleUpdateDate(e, "Arriving", true, apiTransports)
-        handleUpdateDate(e, "Departing", true, apiTransports)
+        const eArriving = {target: {value: "2026-12-17"}}
+        const eDeparting = {target: {value: "2026-12-20"}}
+        handleUpdateDate(eArriving, "Arriving", true, apiTransports)
+        handleUpdateDate(eDeparting, "Departing", true, apiTransports)
+      }).catch(err => {
+        console.warn("Failed to load free dates:", err)
       })
+    }).catch(err => {
+      console.warn("Failed to load transports:", err)
     })
 
     // Detect when resize screen and update media query status
@@ -285,6 +290,7 @@ export default function Form() {
             value={title == "Arriving" ? arrivingDate : departingDate}
             min="2026-12-01"
             max="2026-12-31"
+            readOnly={true}
           />
           <Input
             label={`${title} time ${direction} Cancun`}
