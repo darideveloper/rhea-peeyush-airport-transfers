@@ -18,7 +18,7 @@ function App() {
     Swal.fire({
       icon: 'success',
       title: 'Thank you!',
-      html: '<p>Your transportation has been reserved succesfully <br><br> You will receive a detailed email confirmation including arrival process at the airport and hotel departure time (for departure back to the airport) soon.</p>',
+      html: '<p>Thank you very much for providing us your payment and the Cancun travel information.<br><br>You will receive a detailed e-mail confirmation including arrival process at the airport and hotel departure time (for departure back to the airport) soon.<br><br>Warmest Regards.<br>The Cancun Concierge DMC team.</p>',
     })
   }
 
