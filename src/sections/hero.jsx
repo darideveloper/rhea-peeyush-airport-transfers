@@ -14,7 +14,7 @@ export default function Hero() {
     >
       {/* main image */}
       <img
-        src='./imgs/hero.webp'
+        src='./imgs/hero-v2.webp'
         alt='transport image'
         className={`
           w-full md:w-1/2 lg:w-7/12
